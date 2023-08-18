@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+:root {
+    --bgColor: #223344;
+    --bgColor2: #090a0f;
+    --accentColor: #FFF;
+    --font: 'Zilla Slab', sans-serif;
+    --delay: .3s;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: var(--font);
+    background-image: url('../assets/background.png');
+    opacity: 0;
+    animation: 1s ease-out var(--delay) 1 transitionAnimation;
+    animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar{
+    background-color: var(--bgColor);
+    width: 5px;
+    scroll-behavior: smooth;
+}
+
+#profileImg, #profileImg img {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 40px auto 20px;
+    border-radius: 50%;
+}
+
+#userName {
+    color: var(--accentColor);
+    font-size: 1.50rem;
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links {
+    max-width: 675px;
+    width: 345px;
+    display: block;
+    margin: 27px auto;
+}
+
+#krownlyfans-content { 
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+    background: black;
+    color: white;
+    border: solid goldenrod 3px;
+    margin: 27px auto;
+    border-radius: 5px;
+    overflow: auto;
+}
+#krownlyfans-content h2 { 
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    overflow: auto;
+} 
+
+#krownlyfans-content h3 { 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-weight: 200;
+    align-items: center;
+    overflow: auto;
+}
+
+#krownlyfans-content .krownlyfans-link { 
+    position: relative;
+    background-color: darkgrey;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none;
+    overflow: auto;
+}
+
+@media (hover: hover) {
+    #krownlyfans-content .krownlyfans-link:hover {
+        position: relative;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-decoration: none;
+        overflow: auto;
+    }
+}
+
+.link {
+    position: relative;
+    background-color: black;
+    color: goldenrod;
+    border: solid goldenrod 3px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@media (hover: hover) {
+    .link:hover {
+        position: relative;
+        background: goldenrod;
+        border: solid black 3px;
+        border-radius: 5px;
+        color: black;
+        font-size: 1.25rem;
+        text-align: center;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-decoration: none;
+        text-rendering: auto;
+        image-rendering: auto;
+    }
+}
+
+/*-------------------------animations-----------------------*/
+@keyframes transitionAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+}
