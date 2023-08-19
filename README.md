@@ -18,13 +18,6 @@ While you are free to utilize this as a baseline for your own code, do make chan
 - Change the "background.png" image to your own background image. 
 - Remove the "profileImg.jpg" to your own Profile Image.
 
-<div align="center"><center><br>Alternatively, please do check out this repo: 
-
-🌲[Linktree Repo](https://github.com/johnggli/linktree 'a free linktree alternative')
-
-As this code is based on that repo and would serve as a more straight forward and cleaner method.
-</p></center></div>
-
 <div align="center">
   <center><h1>📨 Methods of Contact 📨</h1></center>
 </div>
